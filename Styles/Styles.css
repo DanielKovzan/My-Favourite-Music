@@ -1,6 +1,7 @@
 nav
 {
-    background-color: white;
+    background-color: black;
+    border: 2px solid white;
 }
 
 nav ul
@@ -17,7 +18,7 @@ nav ul li
 
 nav ul li a
 {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -25,8 +26,6 @@ nav
 {
     padding: 3px;
 }
-
-
 
 nav ul li:nth-child(1) a{
     
@@ -66,6 +65,18 @@ nav ul li:nth-child(3):hover a{
     background-color: #aa21db;
 }
 
+nav ul li:nth-child(4) a{
+    
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+nav ul li:nth-child(4):hover a{
+    background-color: grey;
+}
+
 
 #activeh {
     background-color: red;
@@ -79,11 +90,18 @@ nav ul li:nth-child(3):hover a{
     background-color: #aa21db;
 }
 
+#activec {
+    background-color: grey;
+}
+
+
+
+
 
 body
 {
     background-color: black;
-    font-family: Verdana;
+    font-family: TimesNewRoman;
     color: white;
 }
 
@@ -94,17 +112,83 @@ header{
 
 .logo {
     float: left;
-    width: 120px;
+    width: 90px;
     height: 90px;
-    border: 5px;
-    border-radius: 30px;   
+    border-radius: 130px;   
 }
 
 .logo2 {
     float: right;
-    width: 120px;
+    width: 90px;
     height: 90px;
-    border: 5px;
-    border-radius: 30px;   
+    border-radius: 130px;   
 }
 
+span{ 
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: white;
+    clear: both;
+    border: 2px solid white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    
+    
+}
+
+footer ul li{
+    list-style-type: none;
+    color: white;
+    display: inline;
+    padding: 15px;  
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.padleft {
+    padding-left: 10px;
+}
+
+
+
+ol {
+    padding-left: 345px;
+    list-style: none; counter-reset: li;
+}
+
+ol li::before {
+    content: counter(li) "."; color: #edd72f;
+  display: inline-block; width: 1em;
+  margin-left: -1em
+}
+
+li {counter-increment: li}
+
+#AvivaSection {
+    height:1455px;border:2px solid #edd72f;margin-top: 20px;background-attachment: scroll;background-size: cover;
+}
+
+#UnlikeSection {
+        height: inherit;border:2px solid #aa21db;margin-top: 20px;background-attachment: scroll;background-size: cover;
+
+}
+
+table{
+    margin: 20px;
+    width: 640px;
+    height: 360px;
+}
+table tr th {
+    color: white
+}
