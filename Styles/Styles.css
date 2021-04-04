@@ -176,11 +176,19 @@ ol li::before {
 li {counter-increment: li}
 
 #AvivaSection {
-    height:1455px;border:2px solid #edd72f;margin-top: 20px;background-attachment: scroll;background-size: cover;
+    height:1455px;
+    border:2px solid #edd72f;
+    margin-top: 20px;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 #UnlikeSection {
-        height: inherit;border:2px solid #aa21db;margin-top: 20px;background-attachment: scroll;background-size: cover;
+        height: inherit;
+    border:2px solid #aa21db;
+    margin-top: 20px;
+    background-attachment: scroll;
+    background-size: cover;
 
 }
 
@@ -191,4 +199,14 @@ table{
 }
 table tr th {
     color: white
+}
+
+textarea {
+    height: 5em;
+    width: 25em;
+}
+
+.required:after { 
+    content:"*"; 
+    color: red;
 }
